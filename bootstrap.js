@@ -1,4 +1,4 @@
-import init, { quick_sort, generate_primes, compute_sha256 } from './pkg/wasm_project.js';
+import init, { quick_sort, generate_primes, compute_sha256, encode_huffman } from './pkg/wasm_project.js';
 
 async function runWasm() {
     await init();
@@ -20,6 +20,12 @@ async function runWasm() {
         let input = document.getElementById('hashInput').value;
         let hash = compute_sha256(input);
         document.getElementById('hashOutput').textContent = hash;
+    });
+
+    document.getElementById('encodeButton').addEventListener('click', () => {
+        let input = document.getElementById('inputText').value;
+        let encoded = encode_huffman(input);
+        document.getElementById('encodedOutput').textContent = encoded;
     });
 }
 
