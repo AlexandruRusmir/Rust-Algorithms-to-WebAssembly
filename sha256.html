@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHA-256 Hashing</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <button id="backButton" class="back-button">Back</button>
+    <div class="container">
+        <h1>SHA-256 Hashing</h1>
+        <textarea id="inputText" placeholder="Enter text to hash" style="width: 100%;"></textarea>
+        <button id="exampleButton">Example Text</button>
+        <button id="hashButton">Hash</button>
+        <p class="result"><strong>SHA-256 Hash:</strong> <span id="hashOutput"></span></p>
+    </div>
+    <script type="module" src="scripts/sha256.js"></script>
+    <script>
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

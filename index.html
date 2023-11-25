@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quick Sort and Prime Generation with WebAssembly</title>
+    <title>Rust Algorithms to WebAssembly</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <input id="inputArray" type="text" placeholder="Enter numbers separated by commas">
-    <button id="sortButton">Sort</button>
-    <p>Sorted Array: <span id="sortedArray"></span></p>
-
-    <input id="primeLimit" type="number" placeholder="Enter limit for prime numbers">
-    <button id="primeButton">Generate Primes</button>
-    <p>Prime Numbers: <span id="primeArray"></span></p>
-
-    <input id="hashInput" type="text" placeholder="Enter text to hash">
-    <button id="hashButton">Compute SHA-256</button>
-    <p>SHA-256 Hash: <span id="hashOutput"></span></p>
-
-    <textarea id="inputText" placeholder="Enter text for Huffman encoding"></textarea>
-    <button id="encodeButton">Encode</button>
-    <p>Encoded Output: <span id="encodedOutput"></span></p>
-
-    <script type="module" src="bootstrap.js"></script>
+    <div class="container">
+        <h1>Rust Algorithms to WebAssembly</h1>
+        <div class="menu">
+            <a href="quickSort.html" class="menu-item">Quick Sort</a>
+            <a href="primeNumbers.html" class="menu-item">Prime Numbers</a>
+            <a href="huffmanEncoding.html" class="menu-item">Huffman Encoding</a>
+            <a href="sha256.html" class="menu-item">SHA-256</a>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.classList.add('fade-in');
+        });
+    </script>
 </body>
 </html>

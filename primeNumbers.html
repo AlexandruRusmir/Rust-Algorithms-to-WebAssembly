@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Numbers</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <button id="backButton" class="back-button">Back</button>
+    <div class="container">
+        <h1>Prime Numbers</h1>
+        <input id="inputLimit" type="number" placeholder="Enter a limit" style="width: 100%;">
+        <button id="exampleButton">Example Limit</button>
+        <button id="generateButton">Generate</button>
+        <p class="result"><strong>Prime Numbers:</strong> <span id="primeOutput"></span></p>
+    </div>
+    <script type="module" src="scripts/primeNumbers.js"></script>
+    <script>
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
